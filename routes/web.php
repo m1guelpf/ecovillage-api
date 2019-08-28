@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('villages/search', 'VillageController@searchByTitle');
 Route::resource('villages', 'VillageController')->only('index', 'show');
